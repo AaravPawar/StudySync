@@ -123,34 +123,34 @@ body{
 .menu-icon{
     height: 1.5rem;
     width: 1.5rem;
-}
+} 
 
 .main-section{
+
     max-width: 1280px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 0.6rem;
-    align-items: center;
+    text-align: center;
     margin: 0 auto;
 }
 
 .content-left{
     text-align: center;
-    animation: slideFromLeft 1s ease forwards;
+    animation: slideFromleft 1s ease forwards;
     opacity: 0;
 }
 
-@keyframes slideFromLeft {
-
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
+@keyframes  slideFromleft {
+    0%{
+     opacity: 0;
+     transform: translateX(-100%);
     }
 
     100%{
-        opacity: 1;
-        transform: translateX(0);
+     opacity: 1;
+      transform: translateX(0);
     }
     
 }
@@ -158,18 +158,19 @@ body{
 .section-label{
     font-size: 1.15rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color:var(--primary-color)
 }
 
 .section-title{
     font-size: 2.3rem;
     padding: 1.1rem;
     color: var(--text-color);
+
 }
 
 .section-description{
     color: var(--gray);
-    font-size: 1.13rem;
+    font-size: 1.13 rem;
 }
 
 .button-group{
@@ -180,8 +181,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-
-.start-button,
+.Start-buttton,
 .tour-button{
     
     border: none;
@@ -198,7 +198,7 @@ body{
     background-color: var(--dark-gray);
 }
 
-.start-button:hover{
+.Start-buttton:hover{
     background-color: #5254f8;
 }
 
@@ -206,19 +206,17 @@ body{
     background-color: var(--gray);
 }
 
-
 .content-right{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
 .image-container{
     border: none;
-    border-radius: 1.225rem;
+    border-radius: 1.2rem;
     overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     height: 50vh;
 }
 
@@ -227,10 +225,11 @@ body{
     width: 100%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
     .main-section{
         flex-direction: row;
     }
+   
     .content-left{
         max-width: 50%;
         text-align: left;
@@ -242,29 +241,31 @@ body{
         justify-content: start;
         padding-left: 0;
     }
-    .section_label{
+    .section-label{
         font-size: 1rem;
+
     }
     .section-title{
-        font-size: 3.8rem;
+        font-size: 3.7rem ;
     }
     .image-container{
-        height: 67vh;
+        height: 60vh;
     }
     .section-description{
         font-size: 1.1rem;
         color: var(--gray);
         width: 78%;
     }
+    
 }
 
 .company-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-top: 2rem;
-    animation: slideFromLeft 1s ease forwards;
+    animation: slideFromleft 1s ease forwards;
 }
 
 .company-grid{
@@ -274,7 +275,7 @@ body{
     padding: 1rem;
     background-color: var(--light-gray);
     border: none;
-    border-radius: 0.625rem;
+    border-radius: 0.625;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 1.8rem 2.5rem;
@@ -282,9 +283,9 @@ body{
 
 .company-logo{
     font-size: 1rem;
-    font-weight: 500;
-    color: var(--gray);
+    font-weight: 500; 
     display: flex;
+    color: var(--gray);
     gap: 0.5rem;
 }
 
@@ -292,19 +293,23 @@ body{
     height: 1.56rem;
 }
 
-.logo-txt{
+.logo-text{
     font-size: 1rem;
 }
 
-@media screen and (min-width:640px) {
+@media screen and (min-width:640px)  {
     .company-grid{
         grid-template-columns: repeat(4,1fr);
     }
     .company-title{
-        font-size: 2.3rem;
+        font-size:2.3rem ;
         font-weight: bold;
     }
+    
 }
+
+
+
 
 .feature-container{
     background-color: var(--light-gray);
@@ -464,11 +469,16 @@ body{
 .testimonial-name{
     color: var(--primary-color);
     font-size: 1rem;
+
 }
 
-.testimonial-desc{
+.testimonial-description{
     font-size: 0.875rem;
-    color: #777;
+    color:var(--gray);
+}
+.testimonial-desc{
+     font-size: 0.875rem;
+      color:var(--gray)
 }
 
 .newsletter-container{
